@@ -1,9 +1,16 @@
+- [Mục lục](#user-content-iperf)
+- [1. Cài đặt](#user-content-1-c%C3%A0i-%C4%91%E1%BA%B7t)
+- [2. Một số tham số phổ biến của iperf](#user-content-2-m%E1%BB%99t-s%E1%BB%91-tham-s%E1%BB%91-ph%E1%BB%95-bi%E1%BA%BFn-c%E1%BB%A7a-iperf)
+- [3. Thực hiện các bài test với IPerf](#user-content-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-b%C3%A0i-test-v%E1%BB%9Bi-iperf)
+	- [Mô hình chung](#user-content-m%C3%B4-h%C3%ACnh-chung)
+	- [Sử dụng TCP](#user-content-s%E1%BB%AD-d%E1%BB%A5ng-tcp)
+	- [Sử dụng UDP](#user-content-s%E1%BB%AD-d%E1%BB%A5ng-udp)
+- [4. Jperf = iperf + GUI](#user-content-jperf--iperf--gui)
+
 iperf
 =====
 
 Hướng dẫn sử dụng iperf
-
-# Một số lệnh của IPerf
 
 Iperf là một công cụ hữu hiệu giúp chúng ta tính toán băng thông của mạng
 
@@ -35,7 +42,7 @@ Trên CentOS:
 | -l | Buffer size |
 | -w, --window | Trường Windows size của TCP |
 
-### Thực hiện các bài test với IPerf
+### 3. Thực hiện các bài test với IPerf
 
 #### Mô hình chung
 
@@ -108,7 +115,7 @@ Giả sử có một máy chủ card eth0 có ip 10.10.10.10 và tôi muốn ki�
     
 Quan sát kết quả thu được, lấy giá trị băng thông cao nhất do tham số -b là giới hạn băng thông UDP, nên ta có thể tăng giới hạn này lên để xác định tốc độ thật của card.
 
-### Jperf = iperf + GUI
+### 4. Jperf = iperf + GUI
 
 Đây là một công cụ tương tự như iperf nhưng có thêm giao diện đồ họa, có thể download [tại](http://sourceforge.net/projects/jperf/)
 
